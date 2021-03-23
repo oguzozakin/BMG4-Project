@@ -1,0 +1,32 @@
+Elimdeki veride toplam 32 tane özellik (attribute) mevcut.
+
+1)ID numarası
+2)Teşhis (diagnosis); kötü huylu (malignant) ve iyi huylu (benign).
+.
+.
+.
+
+Verilerdeki her hücre çekirdeği için 10 tane gerçek değere sahip özellik hesaplandığı belirtiliyor.
+
+a) yarıçap (radius)
+b) hücreye ait doku bilgisi (texture)
+c) çevre (perimeter)
+d) alan (area)
+e) pürüzsüzlük (smoothness)
+f) kompaktlık (compactness) = perimeter^2 / area-1.0 
+g) içbükeylik (concavity)
+h) içbükey noktalar (concave points)
+i) simetri değeri
+j) fraktal boyutu
+
+
+ve ek olarak; bu temel özellikler yardımı ile ortalama, standart sapma, en küçük veya en büyük 3 verinin ortalaması hesaplanıp yeni özellikler elde edilmiş. 
+
+Örnek vermek gerekir ise; Mean Radius (ortalama yarıçap), Radius SE (yarıçapların standart sapması) ve Worst Radius (en düşük üç yarıçapın 
+hesaplanması ile elde edilen veri) gibi farklı özellikler üretilmiş. Ve en başta belirttiğim gibi tam 32 adet özelliğimiz bulunuyor.
+
+Veriler içinde eksik değer (missing value) bulunmamakta.
+
+Veriler içindeki sınıf dağılımı (class distribution):
+
+352 iyi huylu (benign), 212 kötü huylu (malignant) şeklinde.
